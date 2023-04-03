@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1eff5ac3a2.js" crossorigin="anonymous"></script>
+        <!-- -----------bootstrap----- -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="header_box_shadow">
+        <nav class="nav_bar_profil">
+            <div class="logo_search_bar">
+                <a href="index.html">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M34 2.5V31.5C34 32.163 33.7366 32.7989 33.2678 33.2678C32.7989 33.7366 32.163 34 31.5 34H2.5C1.83696 34 1.20107 33.7366 0.732233 33.2678C0.263392 32.7989 0 32.163 0 31.5L0 2.5C0 1.83696 0.263392 1.20107 0.732233 0.732233C1.20107 0.263392 1.83696 0 2.5 0L31.5 0C32.163 0 32.7989 0.263392 33.2678 0.732233C33.7366 1.20107 34 1.83696 34 2.5ZM10 13H5V29H10V13ZM10.45 7.5C10.4526 7.12179 10.3807 6.74677 10.2384 6.39634C10.0961 6.04591 9.88621 5.72695 9.62063 5.45765C9.35505 5.18836 9.03903 4.97402 8.69062 4.82686C8.3422 4.67971 7.96821 4.60262 7.59 4.6H7.5C6.73087 4.6 5.99325 4.90553 5.44939 5.44939C4.90553 5.99325 4.6 6.73087 4.6 7.5C4.6 8.26913 4.90553 9.00675 5.44939 9.55061C5.99325 10.0945 6.73087 10.4 7.5 10.4C7.87824 10.4093 8.2546 10.344 8.60758 10.2078C8.96057 10.0716 9.28326 9.86717 9.55721 9.60622C9.83117 9.34527 10.051 9.03289 10.2042 8.68694C10.3574 8.34099 10.4409 7.96824 10.45 7.59V7.5ZM29 19.28C29 14.47 25.94 12.6 22.9 12.6C21.9046 12.5502 20.9136 12.7622 20.0258 13.2149C19.1379 13.6676 18.3843 14.3451 17.84 15.18H17.7V13H13V29H18V20.49C17.9277 19.6184 18.2023 18.7535 18.764 18.0832C19.3257 17.4129 20.1292 16.9913 21 16.91H21.19C22.78 16.91 23.96 17.91 23.96 20.43V29H28.96L29 19.28Z"
+                            fill="#0A66C2" />
+                    </svg>&nbsp;&nbsp;
+
+                    <!-- <img class="logo" src="./css/images/logo.png" alt="logo"> -->
+                </a>
+                <div class="search_bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input class="search_bar_input" type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="icons_bar_profils">
+                <ul class="icons_links_profil ">
+                    <li class="icon_link not_home_icon"><a href="index.html"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
+                    <li class="icon_link"><a href="reseaux.html"><i class="fa-solid fa-user-group"></i><span><p>My Network</p></span></a></li>
+                    <li class="icon_link"><a href="emplois.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M22.84 10.22L21 6h-3.95V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2l2.22 5.18A3 3 0 007 13h14a2 2 0 001.84-2.78zM15.05 6h-6V5a1 1 0 011-1h4a1 1 0 011 1zM7 14h15v3a3 3 0 01-3 3H5a3 3 0 01-3-3V8.54l1.3 3A4 4 0 007 14z"></path>
+                      </svg><span><p>Jobs</p></span></a></li>
+                    <li class="icon_link "><a href="messagerie.html"><i class="fa-solid fa-comment-dots"></i><span><p>Messages</p></span></a></li>
+                    <li class="icon_link after_element icon_new_notification "><a href="notification.html"><i class="fa-solid fa-bell"></i><span><p>Notifications</p></span></a></li>
+                    <li class="icon_link me" id="profil_button">
+                        <a href="#" id="link_ckeck_pro"><img id="my_profil" src="https://media.licdn.com/dms/image/D4E03AQEKkRPGu4Z9AA/profile-displayphoto-shrink_100_100/0/1677493569828?e=1685577600&v=beta&t=cbFc6kVqyxbnItAdLepAvYcXE_sN6rNTsc6mbe11w_k" alt=""><span><p>Me<i class="fa-solid fa-caret-down"></i></p></span></a>
+
+                        <div class="profil_link" id="menu_profil">
+                            <div class="profil_name_job">
+                                <img class="post_photo_profil" src="https://media.licdn.com/dms/image/D4E03AQEKkRPGu4Z9AA/profile-displayphoto-shrink_100_100/0/1677493569828?e=1685577600&v=beta&t=cbFc6kVqyxbnItAdLepAvYcXE_sN6rNTsc6mbe11w_k" alt="#">
+                                <div class="name_and_job"> 
+                                    <h2>Vijay Jack</h2>
+                                    <p>ME(R)N Full Stack Developer Intern @Luminar Technolab</p>
+                                </div>
+                            </div>
+                            <div class="see_my_profil"><a href="profil.html">View profile </a></div>
+                            <div class="account">
+                                <h4 >
+                                    Account
+                                  </h4><br>
+                                
+
+                                <p><a href="#">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                                    class="mercado-match" width="20" height="20" focusable="false">
+                                    <path d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z"
+                                        fill="#f8c77e"></path>
+                                    <path d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z"
+                                        fill="#e7a33e"></path>
+            
+                                </svg> &nbsp;&nbsp;&nbsp;Try Premium for free</a></p><br>
+                                <p class="option"><a href="#"> &nbsp;&nbsp;&nbsp;Settings & Privacy</a></p><br>
+                                <p class="option"><a href="#">&nbsp;&nbsp;&nbsp; Help</a></p><br>
+                                <p class="option"><a href="#">&nbsp;&nbsp;&nbsp;Language</a></p>
+                            </div>
+                            <div class="account">
+                                <h4>Manage
+                                 
+                                    </h4><br>
+                                <p><a href="#">&nbsp;&nbsp;&nbsp;Posts & Activity</a></p><br>
+                                <p class="option"><a href="#">
+                                    &nbsp;&nbsp;&nbsp;Job Posting Account</a></p>
+                            </div>
+                            <div class="log_out">
+                                <p>Sign Out</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <ul id="second_icons_links_nav">
+                    <li class="grid_products"><a href="#"><img class="grid_icons" src="./css/images/grid.png" alt="#">
+                            <span>
+                                <p>Work <i class="fa-solid fa-caret-down"></i></p>
+                            </span></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nvbarlast"> <a href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F&upsellOrderOrigin=premium_nav_upsell_text"><span>
+                                <p style="color: rgb(170, 120, 55)">Try premium free <br>+up to 25% off</p>
+                            </span></a>
+                    </li>
+
+
+                    </li>
+
+                    <li class="new_job_plus">
+
+                        <!-- <i class="fa-solid fa-circle-plus"></i> -->
+
+                        <!-- <span class="responsive_text_job_header">Publier une offre <br> d'emploi</span></a></li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+
+    <!-- -----------------------left box------------- -->
+
+
+    <main class="notification_page">
+        <div class="not_left-container">
+            <h6 style=" font-weight: 15px; font-size:14px;">Manage your <br><br>Notifications</h6>
+            <div class="see_favories">
+                <p>  <a href="#">View settings</a></p> 
+            </div>  
+        </div>
+
+
+        <!-- /* ---------center box notification box----- */ -->
+        <div class="not_center_container">
+            <div class="notification">
+                <img class="not_profil_photo"  src="https://media.licdn.com/dms/image/C4D0BAQFPP1NRP4F5dQ/company-logo_100_100/0/1656657976685?e=1688601600&v=beta&t=GTs1LEPqyGFkbfSq81JLCSjJ2Vpui4NCZAXaUISlu8k" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Tata Consultancy Services </span> posted: How can technology empower breakthroughs in healthcare and life sciences? Debashis Ghosh, President, Business Transformation Group, TCS discusses this.<span> </span></p>
+                    <!-- <div class="congratulation">
+                        <p></p>
+                    </div> -->
+                </div>
+                <div class="publication_time">
+                    <span> 22m<br>&nbsp;&nbsp;&nbsp;••• </span>
+                </div>
+            </div>
+
+                <div class="notification ">
+                <img class="not_profil_photo" src="https://media.licdn.com/dms/image/C560BAQHdAaarsO-eyA/company-logo_100_100/0/1595530301220?e=1688601600&v=beta&t=x0sIe6siCLHn6OfF397O1bKE6VKotXL1oGAwDAH6x9U" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Apple</span>  could host its first major product launch in nearly a decade. See news on what's coming to Cupertino.Apple could host its first major product launch in nearly a decade. See news on what's coming to Cupertino.</p>
+                    <!-- <div class="publication_img_text">
+                        <img src="" alt="">
+                        <p># <br> </p>
+                    </div> -->
+                    <p></p>
+                </div>
+                <div class="publication_time">
+                    <span> &nbsp;&nbsp; &nbsp;&nbsp; 28 m <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQH-B91X8DOuRA/profile-displayphoto-shrink_100_100/0/1672392046310?e=1685577600&v=beta&t=3Q3JSJj8diRUNgSpcTlYXvPfjl7sLb-IfNprcz9qcQU" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Rohini U</span>, your new connection, shared a post you may be interested in
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   2h <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D4E03AQGm_OJEOQnwsA/profile-displayphoto-shrink_100_100/0/1679848736636?e=1685577600&v=beta&t=86uyksgPfpVwk6nalR3Ft0jUQV41ADjzEhulbBhzmfk" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> LUBNA IBRAHIM  </span> posted: Hello friends, I made a restaurant landing page using #html5 #css3 Github repository: https://lnkd.in/eW5xtxEc	 
+                        Github page: https://lnkd.in/epbmFGiE Sreejith K Rahul…
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;    8h<br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C560BAQHRO9T5YA3ouQ/company-logo_100_100/0/1657037248681?e=1688601600&v=beta&t=3tGLDrJHo_qYkHr99iBqPxcXd0AZdboW_tSO2kYSJoM" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Cognizant </span> posted: Cognizant has won the MuleSoft Americas Practice Development Partner of the Year award for the 4th year in a row! The	 recognition is a huge achievement and representative of Cognizant’…
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   9h <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img class="not_profil_photo" src="https://media.licdn.com/dms/image/D4D35AQFdq7KiQuBWnQ/profile-framedphoto-shrink_100_100/0/1670947952993?e=1680847200&v=beta&t=SBIvY4fYnf4W8bvC0kvOEaf9F-3JsRHVnoUtv_B-u0Q" alt="#">
+                <div class="notification_photo_name">
+                     <p><span> Jigna </span>    viewed your profile
+                    <p>
+                    <div class="congratulation"style="width:135px;">
+                        <p> See all views</p>
+                    </div>
+                </div>
+                <div class="publication_time">
+                    <span >&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;  2h <br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; •••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQHd26FZ6dCWMA/profile-displayphoto-shrink_100_100/0/1669788016689?e=1685577600&v=beta&t=3fkyVONsB_PggUzc_pySy0NyBHIv4Omtm195cr1sUcA" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> P KARISHMA</span> posted: Hello Connections, This is an SBI Bank App that I have created using MEAN Technology. In this app, we can register an	 account, sign in, deposit and withdraw amount, view the transaction…
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;18h <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C4E0BAQE0UPACNUrv3g/company-logo_100_100/0/1674757963152?e=1688601600&v=beta&t=dWUzmsUbuLksMW1VuOkzztJT61iXrJZ5cTkNqneb_Zo" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Wipro </span> posted: The HIMSS Global Conference is one of the largest annual gatherings of healthcare and IT professionals, dedicated to showcasing the latest advancements in healthcare information…
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   1d <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C4D0BAQFT17AbDs0seQ/company-logo_100_100/0/1656660630831?e=1688601600&v=beta&t=qasCm_E-BWkEIBL7krD2WzqB_mXWKCTz6O8jPfljhG0" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Infosys</span>posted something
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   1d <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D4D03AQHG6DPtExfbJw/profile-displayphoto-shrink_100_100/0/1676956217125?e=1685577600&v=beta&t=2uNsMZ_yQP_VeD0bMCKcKd3uF7lKFDQSdxo6u5S5F1I" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Ram Maheshwari </span>⚡ posted: An Amazing Cheatsheet For JavaScript BOM 🔥 Do Like 👍 & Repost 🔄 Follow Ram Maheshwari ⚡ for	 more: Tips💡+ Guides📜 + Resources 💎 + Quizzes 🎲 related to…
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   7d <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C5603AQE6z27QmJ93hw/profile-displayphoto-shrink_100_100/0/1662449310973?e=1685577600&v=beta&t=-3zE-UIAectyMUqnfuAsEAmxZblm7UAP1cXlf9NTPpU" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Anjana S Nair</span>
+                        'sFull Stack Engineer
+                        KeyValue Software Systems
+                        Kochi, Kerala, India (On-site)explore job in your Network.
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   5h <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C560BAQGS45lxy8srXA/company-logo_100_100/0/1552008317866?e=1688601600&v=beta&t=lU0-K8y-uhyfC0t0WLIHuGzBgbp9NcW66m5thR1u99s" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Help A Teacher</span>
+                  🤖 Want to create a better learning environment for your students? Check out this blog on the virtues of an AI educational leader!
+                        27,167 followers27,167 followers
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   1d <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C4D0BAQFT17AbDs0seQ/company-logo_100_100/0/1656660630831?e=1688601600&v=beta&t=qasCm_E-BWkEIBL7krD2WzqB_mXWKCTz6O8jPfljhG0" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Infosys</span>your Job Alert for Software Engineering in Kochi 
+                       </p>
+                       <div class="congratulation"style="width:145px;">
+                        <p>View 30+ Jobs</p>
+                    </div>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;   2d <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQHlR99L0HDWsQ/profile-displayphoto-shrink_100_100/0/1676125072253?e=1685577600&v=beta&t=3LMOcrFIs9lsuhqOPG_bJtSFmZl_DWdHdD_JyuJ3C8Y" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Sonia George</span>
+                        Well done 👏🏻 Vijay Jack this is amazing. Keep designing
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+           
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="  https://media.licdn.com/dms/image/D5603AQHO6fXigMfmNw/profile-displayphoto-shrink_100_100/0/1673936045210?e=1685577600&v=beta&t=r6ACvUsDQsEp0_C9HqsVWwUbqGgFLbO0FJ3RVoLAcj4" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Rahul Mohanakumar</span>
+                    Good Job 👍
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C5603AQE6z27QmJ93hw/profile-displayphoto-shrink_100_100/0/1662449310973?e=1685577600&v=beta&t=-3zE-UIAectyMUqnfuAsEAmxZblm7UAP1cXlf9NTPpU" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Anjana S Nair</span>
+                   👏👏👏
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C4E07AQHIbj0ELKRZag/group-logo_image-shrink_72x72/0/1633370639965?e=1680868800&v=beta&t=pZLW3Fl2uHaB9uVdBOnAFWA3xwu_hjrQIlRTEpQOCMk" alt="#">
+                <div class="notification_photo_name">
+                    <p>
+                        you are in: welcome to<span>&nbsp;UI & Micro Services</span>
+                        </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+                <!-- <div class="notification_photo_name">
+                    <p>
+                       you are in: welcome to<span>.NET Developers</span>
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •••  </span>
+                </div> -->
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C5607AQFu2nkTz2cq2w/group-logo_image-shrink_72x72/0/1631008185431?e=1680868800&v=beta&t=PBYec9hrmh3-mhx29utZbLTpV0rek0NWrjsSoLAlETY" alt="#">
+                <div class="notification_photo_name">
+                    <p>
+                        you are in: welcome to<span>&nbsp;Full stack Developer-Java technologies,UI & Micro Services</span>
+                        </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQHlR99L0HDWsQ/profile-displayphoto-shrink_100_100/0/1676125072253?e=1685577600&v=beta&t=3LMOcrFIs9lsuhqOPG_bJtSFmZl_DWdHdD_JyuJ3C8Y" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Sonia George</span>
+                        Well done 👏🏻 
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            
+               
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQG0qi2DMe9Rtw/profile-displayphoto-shrink_100_100/0/1680110047573?e=1685577600&v=beta&t=AxElMOCkHVvDhA_IpRYoeEkxEvThkLv3y8lWcMUYPXE" alt="#">
+                <div class="notification_photo_name">
+                    <p>
+                       
+                        Congratulate<span>&nbsp;Salini T</span>on starting a New Position as intern<span>Luminar Technolab</span>
+                   </p>
+                   <div class="congratulation"style="width:135px;">
+                    <p> Say congrats</p>
+                </div>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div> 
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C5607AQHkNNQ7VJct-A/group-logo_image-shrink_72x72/0/1630997527396?e=1680868800&v=beta&t=-9UdoaE70kPen22l6PlslP8bpbZnP1zzTMApIuHnYRE" alt="#">
+                <div class="notification_photo_name">
+                    <p>
+                        you are in: welcome to<span>&nbsp;UI & Micro Services</span>
+                        </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C560BAQFmuLSyL1nlPA/company-logo_100_100/0/1678231358774?e=1688601600&v=beta&t=NY5dM3j9dkFC46xFBv2ZKr1ccnraK7WY34HrWBFMXu4" alt="#">
+                <div class="notification_photo_name">
+                    <p>
+                        New from in <span>GitHub</span> branching Out:GitHub Copilot X:The Future Of AI powered software Development
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp; 1mo <br>&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div> <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/D5603AQGipgHUbZNDnQ/profile-displayphoto-shrink_100_100/0/1671834971278?e=1685577600&v=beta&t=nx7tOBedcROmzYQo0x8FCjbUP193IAGwOqHYcu0ioAQ" alt="#">
+                <div class="notification_photo_name">
+                    <p><span> Leah Cohen</span>
+                       
+                    This is awesome 👏🏻  
+
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1mo <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            <div class="notification checked">
+                <img  class="not_profil_photo" src="https://media.licdn.com/dms/image/C560BAQGEEoaoXM1ssA/company-logo_100_100/0/1644992060742?e=1688601600&v=beta&t=u6HmVo_Cmi-svPO0Ltat8yhxUKLDZpQLAkXksoFd7m4" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Job AlertJob Alert
+                      
+                        </span>
+                        𝗚𝗿𝗲𝗮𝘁 𝗢𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝘆 𝗧𝗼 𝗦𝘁𝘂𝗱𝘆 & 𝗪𝗼𝗿𝗸 𝗜𝗻 𝗖𝗮𝗻𝗮𝗱𝗮
+
+                        
+                        
+                       </p>
+                </div>
+                <div class="publication_time">
+                    <span> 1mo <br>&nbsp;&nbsp;•••  </span>
+                </div>
+            </div>
+            
+          
+           
+           
+             
+             
+           
+            
+            <!--  -->
+          
+            <!-- <div class="notification checked">
+                <img class="not_profil_photo" src="./css/images/profil5-min.jpg" alt="#">
+                <div class="notification_photo_name">
+                    <p><span>Lionnel Mario</span> Rodolphe Meras et 9 autres personnes ont réagi à votre post</p>
+                    <div class="publication_img_text">
+                        <img src="./css/images/o vs clone.jpg" alt="">
+                        <p>#ORIGINAL VS #CLONE #junior #web <br> #developpeur</p>
+                    </div>
+                    <p>11 reactions . 20 commentaires</p>
+                </div>
+                <div class="publication_time">
+                    <span>&nbsp;&nbsp;&nbsp; 50 min <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...  </span>
+                </div>
+            </div> -->
+        </div>
+
+
+        <!-- -----------right box---------- -->
+
+
+        <div class="not_right-container">
+            
+            <aside class="pub_img_text">
+                <div class="public_adds"style="background-color:white;">
+                    <h6 style="margin-left: 239px;">Ad ...</h6>
+                    <h5 style="margin-left: 36px;">Get the latest jobs and industry news</h5><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img style="border-radius: 50px;width: 69.99px;height: 69.99px;" src="https://media.licdn.com/dms/image/D4E03AQEKkRPGu4Z9AA/profile-displayphoto-shrink_100_100/0/1677493569828?e=1685577600&v=beta&t=cbFc6kVqyxbnItAdLepAvYcXE_sN6rNTsc6mbe11w_k" alt="">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img style="border-radius: 50px;width: 75.91px;height: 75.91px;" src="https://media.licdn.com/dms/image/C4D0BAQFPP1NRP4F5dQ/company-logo_100_100/0/1656657976685?e=1688601600&v=beta&t=GTs1LEPqyGFkbfSq81JLCSjJ2Vpui4NCZAXaUISlu8k" alt="">
+                    <br>
+                    <h5><span style="font-size: 12px;margin-left: 36px;font-family: 'Times New Roman', Times, serif;">Vijay , explore relevant opportunities with </span<br><br> <span style="font-size: 13px;margin-left: 50px;">Tata Consultancy Services</span></h5><br>
+                    <button class=""
+                    style="background-color: white;border-radius: 15px;width: 97.93px;height:31.99px; border-color: #0a66c2 ;color: #0a66c2 ;margin-left: 87px;">Follow</button><br><br>
+                
+                </div>
+                <div class="pub_img">
+                    <img src="./css/images/pub.jpg" alt="">
+                </div>
+                <div class="all_links">
+                    <a href="#"> About &nbsp; &nbsp;&nbsp;Accessibility &nbsp; &nbsp; &nbsp; Help Center <br> Privacy &
+                        Terms&nbsp; <i class="fa-solid fa-caret-down"></i>
+                        &nbsp; &nbsp; Ad Choices <br>
+                        &nbsp; &nbsp; Advertising &nbsp; &nbsp; Business Services &nbsp; <i
+                            class="fa-solid fa-caret-down"></i><br>
+
+                        Get the LinkedIn app &nbsp; &nbsp; More <br>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 14" data-supported-dps="56x14"
+                            fill="#0A66C2" class="mercado-match" width="56" height="14" focusable="false">
+                            <g>
+                                <path class="background-mercado"
+                                    d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z">
+                                </path>
+                            </g>
+                        </svg>
+
+                        <path class="background-mercado"
+                            d="M22.1 8.2l3.09 3.8h-2.44L20 8.51V12h-2V2h2v5.88L22.54 5h2.55zm-8-3.4A2.71 2.71 0 0011.89 6V5H10v7h2V8.73a1.74 1.74 0 011.66-1.93C14.82 6.8 15 7.94 15 8.73V12h2V8.29c0-2.2-.73-3.49-2.86-3.49zM32 8.66a4.22 4.22 0 010 .44h-5.25v.07a1.79 1.79 0 001.83 1.43 2.51 2.51 0 001.84-.69l1.33 1a4.31 4.31 0 01-3.25 1.29 3.49 3.49 0 01-3.7-3.75 3.58 3.58 0 013.76-3.65C30.44 4.8 32 6.13 32 8.66zm-1.86-.86a1.46 1.46 0 00-1.59-1.4 1.64 1.64 0 00-1.8 1.4zM2 2H0v10h6v-2H2zm36 0h2v10h-1.89v-.7a2.44 2.44 0 01-2 .9 3.41 3.41 0 01-3.31-3.7 3.36 3.36 0 013.3-3.7 2.62 2.62 0 011.9.7zm.15 6.5a1.63 1.63 0 00-1.62-1.85A1.76 1.76 0 0034.9 8.5a1.76 1.76 0 001.63 1.85 1.63 1.63 0 001.62-1.85zM8 1.8A1.27 1.27 0 006.75 3a1.25 1.25 0 002.5 0A1.27 1.27 0 008 1.8zM7 12h2V5H7zM56 1v12a1 1 0 01-1 1H43a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM46 5h-2v7h2zm.25-2a1.25 1.25 0 00-2.5 0 1.25 1.25 0 002.5 0zM54 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 0048.89 6V5H47v7h2V8.73a1.74 1.74 0 011.66-1.93C51.82 6.8 52 7.94 52 8.73V12h2z">
+                        </path>
+
+
+                        <span>LinkedIn Corporation © 2023 </span>
+                </div>
+
+            </aside>
+        </div>   
+    </main>
+
+
+    <article class="messages_float_box " id="sms_float_container">
+        <div class="sms_float_header">
+            <div class="photo_and_title">
+                <div class="sms_float_photo">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQEKkRPGu4Z9AA/profile-displayphoto-shrink_100_100/0/1677493569828?e=1684972800&v=beta&t=pm2TSpPMYyoP-Tyov6q0fHucMfdv1X7xHL_CTfRcrys"
+                        alt="#">
+                </div>
+                <a href="">
+                    <h4 style="color: rgb(52, 53, 53);">Messaging</h4>
+                </a>
+            </div>
+            <div class="float_icons_box">
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-pen-to-square"></i>
+                <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+                <span id="btn_toggle_message_box">
+                    <i class="fa-solid fa-angle-up"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="sms_container">
+            <div class="message_input_container" style="color: rgb(52, 53, 53);">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- <h4>focused&nbsp;<span>other</span></h4> -->
+                <input class="message_input" id="search_message" type="text" placeholder="Search messages"
+                    onkeyup="dynamicSearch()">
+                <i class="fa-solid fa-sliders"></i>
+            </div>
+            <div>
+                <h4 style="color: rgb(9, 108, 44); font-size: medium;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;focused&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        style="color: rgb(52, 53, 53);">other</span></h4>
+            </div>
+
+
+
+            <div class="meassage_profil_container " style="height: 400px;">
+                <div class="message_profils_sider">
+                    <a href="messagerie.html">
+                        <div class="message_profil_item message_one others_message">
+                            <div class="message_profil_photo">
+                                <img src="https://media.licdn.com/dms/image/C5603AQG_SlghqFCfBg/profile-displayphoto-shrink_100_100/0/1613585225295?e=1685577600&v=beta&t=JL92jElft6Srkql8CQV5ZgVxeGtQRrHxi6_MOn_3eIE"
+                                    alt="">
+                            </div>
+                            <div class="message_profil_name_and_text">
+                                <p><span class="name_pro">
+                                        Sreelakshmi Ramachandran</span>&nbsp; &nbsp; &nbsp; <span
+                                        class="message_profil_date">march 18</span>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-comment-slash"></i>
+                                </p>
+                                <p> hi lecu.. </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQFrYidMk19h2A/profile-framedphoto-shrink_100_100/0/1678446329711?e=1680634800&v=beta&t=y-AfzPN2A-UA1lEaMIaqIFUYstGuD3-Ovp9g12L30-E"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">Shiva Gayathri</span> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                                <span class="message_profil_date">1week</span> <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>thank you..!! <br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/C4D03AQHdkqxgzBtbrQ/profile-displayphoto-shrink_100_100/0/1654660792402?e=1685577600&v=beta&t=wGZ2JSunw6YaOetehzQNdXj4b5AsazSIzhtwSSS8CTY"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    sreerekha G
+                                </span> &nbsp; <span class="message_profil_date">2days</span><i
+                                    class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> k bye..I will catch u later..!!</p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQGoIoPlubHqZA/profile-displayphoto-shrink_100_100/0/1670663770505?e=1685577600&v=beta&t=7Ov6h3lNDl4X8Cbo00UJx-VV9Qjn2MlP6hwQ6TRn5Yw"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p> <span class="name_pro">
+
+                                    Arya Nair
+
+                                </span> &nbsp; &nbsp; <span class="message_profil_date">march 21</span><i
+                                    class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> your welcome :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQGUGXGZyKOfeA/profile-displayphoto-shrink_100_100/0/1676370326798?e=1685577600&v=beta&t=xM7NHlTPZy8ulNsg4ITz_9ZcBAJYgmwhEIVHRqULcTo"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Amiya Kiran
+                                </span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="message_profil_date">26
+                                    march</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>thanks to your informations.. <br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQHgxsw0nxPAxQ/profile-displayphoto-shrink_100_100/0/1680102179578?e=1685577600&v=beta&t=rrBPaEBUJECkkB6eMhfz47UoHYvkbgwA3TDsSRQJf4s"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p> <span class="name_pro">
+
+                                    Rahla NA
+
+                                </span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="message_profil_date">3
+                                    days</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>ooh white noice problem dear..!!<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQHZ8gfiM9iBQg/profile-framedphoto-shrink_100_100/0/1666000070074?e=1680634800&v=beta&t=tbseWgVy4AJ5WDq1Qc5WzxlzgNVVYM10cvcAqDbYoVc"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    kaviya s
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>did you get the answer..??<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D4E03AQFjC6vwPf0qLw/profile-displayphoto-shrink_100_100/0/1676887567923?e=1685577600&v=beta&t=ndgN05NcPxIN6QiOKCEAblDQYOnvYvKVm_zA7k7uhMk"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Manju Mohan
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>thanks dear.. :) <br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D4E03AQH0QsiMATNuTA/profile-displayphoto-shrink_100_100/0/1679731723813?e=1685577600&v=beta&t=j6P6D6y3Fiuyi-Wbkt2Tk8eTKnFvRRbHtBFoTkMxCZg"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Amrutha mohan
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>it's oke dear.. :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQE_3nI5KN303A/profile-displayphoto-shrink_100_100/0/1674538377853?e=1685577600&v=beta&t=Bxc6KNrfn9qaINvteM9UWiQqo7UBGq6LAqdUNFO7vLU"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Nimisha P
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>can u send me..!!<br> </p>
+                        </div>
+                    </div>
+
+
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQHlR99L0HDWsQ/profile-displayphoto-shrink_100_100/0/1676125072253?e=1685577600&v=beta&t=3LMOcrFIs9lsuhqOPG_bJtSFmZl_DWdHdD_JyuJ3C8Y"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Sonia George
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>thanks you ma'am :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQGTwtTwg6sAgg/profile-displayphoto-shrink_100_100/0/1671193198761?e=1685577600&v=beta&t=S_tV41NUDpwJkGggMTMzziDodz0uOscefHmL4xX2Yxs"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    jishna roshy
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>is that working..??<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQFIfuv9Fm-TvA/profile-framedphoto-shrink_100_100/0/1678165267015?e=1680634800&v=beta&t=GZDU0DVACr_QiLWjJYr6AWpqVcodJQ7E9ipDmQ2NOPg"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+
+                                    Rinsha k
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>how is that?<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQEZzPYbFL0WuQ/profile-framedphoto-shrink_100_100/0/1663314450817?e=1680634800&v=beta&t=CtYZfRzDtWyu5dUw7iozh3kNh5PToNTvJFQQUmCzjRw"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+
+                                    Nikhila Sabu
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>just check it that..<br> </p>
+                        </div>
+                    </div>
+
+
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQH2J43vn_924Q/profile-displayphoto-shrink_100_100/0/1675668350789?e=1685577600&v=beta&t=osKDa0CI3rne4Xb6KsvU5e7BKZCow5TsK2NxBAzWtgI"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+
+                                    Benet Elsa Thomas
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">3 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>is that freely available software??<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQGrp6eEhq4wvA/profile-displayphoto-shrink_100_100/0/1676479867278?e=1685577600&v=beta&t=748fNlzTk7Wv-2pVkp6mgfO9xZeHPrY-HZBg8QomWNo"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+
+
+                                    Adithya Babu
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">4 hours
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>good one.. :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQHJg689YLV6mw/profile-displayphoto-shrink_100_100/0/1677169222505?e=1685577600&v=beta&t=JCws-85wYkJ93wi8Qgz3GACklBKcrKShAy9SDERHWZU"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Rohini P R
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">16 min
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>nice work..<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D4D03AQEMUhYSs_le4Q/profile-displayphoto-shrink_100_100/0/1679479337608?e=1685577600&v=beta&t=mMacQ8xtjjTqStSuvuUIgCr3i0VIpnA6SuUWW-cVM78"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Vrindha V
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">7 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>congrats dear..<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D4D03AQFIak_iK5_6Rw/profile-displayphoto-shrink_100_100/0/1676915445603?e=1685577600&v=beta&t=4bZaCnFeaDUf10PVG-tHRY3pzuIwU7TLaQblDTBRfek"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+
+                                    Shahana Pareeth
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">3 week
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>nice design.. :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQHad2xwuM0T1w/profile-framedphoto-shrink_100_100/0/1678201179528?e=1680685200&v=beta&t=VqjkUuDnykzxKt6YWdVNDeL24pO5cIMIG578ga7_PEg"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    shahnas_ p
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>all the best dear..<br> </p>
+                        </div>
+                    </div>
+
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQG2zUNeuw2Y0w/profile-framedphoto-shrink_400_400/0/1649748767138?e=1680688800&v=beta&t=ov42weOgI2IkJ6Fh24Lb2cQ9CGUdHWZkhcAmF3kcFPM"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Krishna C S
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">3 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p>nice work.. :)<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/C4D03AQEHnmeWgqLgGw/profile-displayphoto-shrink_400_400/0/1639854049881?e=1685577600&v=beta&t=CPsaZ01RJliZJ1fQgibexFaFl5qx2zgzNH5vgSW6AbM"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Nasrim k
+
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> k bye catch u later..<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D4D35AQFdq7KiQuBWnQ/profile-framedphoto-shrink_400_400/0/1670947952993?e=1680688800&v=beta&t=qWIZExkU3bGy7S-XsCKle0ELBc_CdidSuLCfgwS2ECU"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Jigna A
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">1 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> all the best anyway..<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5635AQGt2PsMlJvQcg/profile-framedphoto-shrink_400_400/0/1675844722546?e=1680688800&v=beta&t=zOUuDGDA5L-Q1EmE_04YPL8LwHuipDQB-gbL5I9VG4w"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    Gopika M.B
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">4 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> as you wish..<br> </p>
+                        </div>
+                    </div>
+                    <div class="message_profil_item others_message">
+                        <div class="message_profil_photo">
+                            <img src="https://media.licdn.com/dms/image/D5603AQHVFckwScnPfA/profile-displayphoto-shrink_400_400/0/1678181873126?e=1685577600&v=beta&t=yV46SStAlY_ItaI2jcj4UhkV91tA1EIdg3QWRGYO4mY"
+                                alt="">
+                        </div>
+                        <div class="message_profil_name_and_text">
+                            <p><span class="name_pro">
+                                    APARNA PRASAD
+                                </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">5 day
+                                    ago</span><i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-comment-slash"></i>
+                            </p>
+                            <p> thank you..!!<br> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message_profil_item others_message">
+                    <div class="message_profil_photo">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQGVTUF9IN6s6Q/profile-displayphoto-shrink_100_100/0/1644930802468?e=1685577600&v=beta&t=cngjExzPs_GPdAPZ0xlk1PplTshIzBXg03i2ykTQBUU"
+                            alt="">
+                    </div>
+                    <div class="message_profil_name_and_text">
+                        <p><span class="name_pro">
+                                Alfiya P A
+
+                            </span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<span class="message_profil_date">2 day
+                                ago</span><i class="fa-solid fa-envelope"></i>
+                            <i class="fa-solid fa-comment-slash"></i>
+                        </p>
+                        <p>cute works..<br> </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
